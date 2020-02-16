@@ -1,0 +1,10 @@
+<form [formGroup]="mainGroup">
+
+  <div class="row">
+    <p>Press this button to watch the magic happen</p>
+    <p><button (click)="getResults()">The Button</button></p>
+    <p>{{mainGroup.get('key').value}}</p>
+    <p>{{mainGroup.get('results').value}}</p>
+  </div>
+
+</form>
